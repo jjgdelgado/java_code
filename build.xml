@@ -39,7 +39,8 @@
     </target>
 
     <target name="junit" depends="tjar">
-        <junit printsummary="no">
+		<mkdir dir="test/results"/>
+        <junit printsummary="yes">
 			<classpath refid="classpath" />
 			<classpath location="test"/>
 			<test name="hellotest" haltonfailure="no" todir="test/results">
