@@ -18,7 +18,7 @@
         <javac srcdir="src" destdir="build/classes"/>
     </target>
     <target name="tjar" depends="tcomp">
-        <jar destfile="test/hello.jar" basedir="test/hello">
+        <jar destfile="test/hello.jar" basedir="test/hellotest">
             <manifest>
                 <attribute name="Test-Class" value="hellotest"/>
             </manifest>
